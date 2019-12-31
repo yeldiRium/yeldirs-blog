@@ -1,0 +1,13 @@
+<script>
+  window.INSIGHT_CONFIG = {
+      TRANSLATION: {
+          POSTS: '<%= __("search.posts") %>',
+          PAGES: '<%= __("search.pages") %>',
+          CATEGORIES: '<%= __("search.categories") %>',
+          TAGS: '<%= __("search.tags") %>',
+          UNTITLED: '<%= __("search.untitled") %>',
+      },
+      ROOT_URL: '<%= config.root %>',
+      CONTENT_URL: '<%- url_for("/content.json")%>',
+  };
+</script>

@@ -1,0 +1,9 @@
+# Hexo
+public/
+db.json
+
+# node
+node_modules/
+
+# theme
+themes/yeldirium/source/

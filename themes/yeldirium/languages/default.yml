@@ -1,0 +1,28 @@
+menu:
+  home: Home
+  repositories: Repositories
+  about: About
+  contact: Contact
+  archive: Archive
+navigation:
+  toggle: Toggle Navigation
+search:
+  title: Search
+  placeholder: Type something...
+  posts: Posts
+  pages: Pages
+  categories: Categories
+  tags: Tags
+  untitled: (Untitled)
+sidebar:
+  widget:
+    announcement: Announcement
+    archive: Archive
+    tags: Tags
+    categories: Categories
+    tagCloud: Tag Cloud
+    recentPosts: Recent Posts
+copyright:
+  theme_by: Theme by
+  based_on: based on
+  powered_by: Powered by

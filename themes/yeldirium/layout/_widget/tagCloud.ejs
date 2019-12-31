@@ -1,0 +1,10 @@
+<% if (site.tags.length){ %>
+  <div class="widget">
+    <h3 class="widget-title"><%= __('sidebar.widget.tagCloud') %></h3>
+    <div class="widget-body">
+      <div class="tag-cloud">
+        <%- tagcloud({ min_font: theme.site.tagCloud.minFont, max_font: theme.site.tagCloud.maxFont }) %>
+      </div>
+    </div>
+  </div>
+<% } %>

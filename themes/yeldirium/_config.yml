@@ -1,0 +1,65 @@
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  - name: home
+    path: /
+    icon: fas fa-home
+    enabled: true
+  - name: repositories
+    path: /repositories
+    icon: fas fa-folder
+    enabled: false
+  - name: about
+    path: /about/
+    icon: fas fa-archive
+    enabled: true
+  - name: contact
+    path: /contact/
+    icon: fas fa-address-book
+    enabled: true
+  - name: archive
+    path: /archive/
+    icon: fas fa-archive
+    enabled: true
+
+site:
+  favicon: /favicon.ico
+  showProfileInHeader: true
+  enableMenuIcons: true
+  announcement: This is an important message, to be seen in the sidebar at all times.
+  archive:
+    showCount: true
+    type: yearly
+  categories:
+    showCount: true
+  tags:
+    showCount: true
+  tagCloud:
+    minFont: 13
+    maxFont: 14
+
+profile:
+  gravatar: hannes.leutloff@yeldirium.de
+  avatar: # Uses gravatar if gravatar is set.
+  author: Hannes Leutloff
+  author_title: Software Engineer
+  location: Neu-Isenburg, Germany
+  social:
+    names:
+      github: yeldiRium
+    links:
+      github: https://github.com/yeldiRium
+
+rss: /atom.xml
+
+sidebar:
+  enabled: true
+  widgets:
+    - announcement
+    - recentPosts
+    - archive
+    - tagCloud
+    - categories
+    - tags

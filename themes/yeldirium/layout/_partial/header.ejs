@@ -1,0 +1,29 @@
+<header class="header">
+  <div class="navbar-header">
+    <% if(theme.profile && theme.site.showProfileInHeader) { %>
+      <%- partial('_partial/header/profile') %>
+    <% } %>
+    <%- partial('_partial/search/searchBar') %>
+    <%- partial('_partial/navigation/toggleButton') %>
+  </div>
+  <nav id="main-navbar" class="collapse navbar-collapse" role="navigation">
+    <ul class="nav navbar-nav main-nav">
+      <% for (var i in theme.menu){ %>
+        <%
+          const item = theme.menu[i];
+          if (item.enabled) {
+        %>
+          <li class="menu-item menu-item-<%= item.name %>">
+            <a href="<%- url_for(item.path) %>">
+              <% if(theme.site.enableMenuIcons) { %>
+                <i class="<%= item.icon %>"></i>
+              <% } %>
+              <span class="menu-title"><%= __('menu.' + item.name) %></span>
+            </a>
+          </li>
+        <% } %>
+      <% } %>
+    </ul>
+    <%- partial('_partial/social') %>
+  </nav>
+</header>

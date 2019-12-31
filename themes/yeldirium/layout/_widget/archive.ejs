@@ -1,0 +1,11 @@
+<% if (site.posts.length){ %>
+  <div class="widget">
+    <h3 class="widget-title"><%= __('sidebar.widget.archive') %></h3>
+    <div class="widget-body">
+      <%- list_archives({
+      	show_count: theme.site.archive.showCount,
+      	type: theme.site.archive.type
+      }) %>
+    </div>
+  </div>
+<% } %>
