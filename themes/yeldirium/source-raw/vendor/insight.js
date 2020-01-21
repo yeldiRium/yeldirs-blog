@@ -226,7 +226,7 @@ const insight = (CONFIG) => {
     });
 
     var touch = false;
-    $(document).on('click focus', '.navbar-header .search', function () {
+    $(document).on('click focus', '.header__header .searchbar', function () {
         $main.addClass('show');
         $main.find('.ins-search-input').focus();
     }).on('click touchend', '.ins-search-item', function (e) {
@@ -239,9 +239,9 @@ const insight = (CONFIG) => {
         if (e.type !== 'click' && !touch) {
             return;
         }
-        $('.navbar-header').css('pointer-events', 'none');
+        $('.header__header').css('pointer-events', 'none');
         setTimeout(function(){
-            $('.navbar-header').css('pointer-events', 'auto');
+            $('.header__header').css('pointer-events', 'auto');
         }, 400);
         $main.removeClass('show');
         touch = false;

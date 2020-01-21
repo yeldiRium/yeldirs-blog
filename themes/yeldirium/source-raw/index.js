@@ -7,4 +7,10 @@ import './scss/index.scss';
 /* script */
 import { insight } from './vendor/insight';
 
+import setupMobileNavigation from './js/mobileNavigation';
+
 insight(window.INSIGHT_CONFIG);
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupMobileNavigation();
+});

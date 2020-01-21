@@ -1,8 +1,17 @@
 <% if(theme.profile.social.links) { %>
-	<% var tooltipClass = 'data-toggle=tooltip data-placement=top'; %>
-    <ul class="social-links">
-    	<% for(var i in theme.profile.social.links) { %>
-        <li><a href="<%- url_for(theme.profile.social.links[i]) %>" target="_blank" title="<%= titlecase(i) %>" <%= tooltipClass %>><i class="fab fa-<%= i %>"></i></a></li>
-        <% } %>
-    </ul>
+  <% var tooltipClass = 'data-toggle=tooltip data-placement=top'; %>
+  <ul class="navigation-social">
+    <% for(var i in theme.profile.social.links) { %>
+      <li class="navigation-social__item">
+        <a  href="<%- url_for(theme.profile.social.links[i]) %>"
+            class="navigation-social__item__link"
+            target="_blank"
+            title="<%= titlecase(i) %>"
+            <%= tooltipClass %>
+        >
+          <i class="fab fa-<%= i %>"></i>
+        </a>
+      </li>
+    <% } %>
+  </ul>
 <% } %>

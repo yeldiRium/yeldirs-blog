@@ -1,24 +1,24 @@
 <header class="header">
-  <div class="navbar-header">
+  <div class="header__header">
     <% if(theme.profile && theme.site.showProfileInHeader) { %>
       <%- partial('_partial/header/profile') %>
     <% } %>
     <%- partial('_partial/search/searchBar') %>
     <%- partial('_partial/navigation/toggleButton') %>
   </div>
-  <nav id="main-navbar" class="collapse navbar-collapse" role="navigation">
-    <ul class="nav navbar-nav main-nav">
+  <nav class="header__body" role="navigation">
+    <ul class="navigation">
       <% for (var i in theme.menu){ %>
         <%
           const item = theme.menu[i];
           if (item.enabled) {
         %>
-          <li class="menu-item menu-item-<%= item.name %>">
-            <a href="<%- url_for(item.path) %>">
+          <li class="navigation__item">
+            <a href="<%- url_for(item.path) %>" class="navigation__item__link">
               <% if(theme.site.enableMenuIcons) { %>
                 <i class="<%= item.icon %>"></i>
               <% } %>
-              <span class="menu-title"><%= __('menu.' + item.name) %></span>
+              <span class="navigation__item__title"><%= __('menu.' + item.name) %></span>
             </a>
           </li>
         <% } %>
