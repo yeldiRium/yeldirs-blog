@@ -1,0 +1,18 @@
+a {
+  color: $font-color-main;
+  text-decoration: underline;
+
+  &:visited {
+    color: $font-color-main;
+  }
+
+  &:hover {
+    color: $font-color-link-hover;
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    color: $font-color-main;
+  }
+}

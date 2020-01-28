@@ -49,7 +49,11 @@
 
     </div>
   <% } else { %>
-    <h1><%= page.month + '/' + page.year %></h1>
+    <% if (page.month) { %>
+      <h1><%= page.month + '/' + page.year %></h1>
+    <% } else { %>
+      <h1><%= page.year %></h1>
+    <% } %>
 
     <% page.posts.each(article => { %>
       <div class="archive-item">

@@ -1,9 +1,13 @@
 menu:
   home: Home
+  blog: Blog
   repositories: Repositories
   about: About
   contact: Contact
   archive: Archive
+footer:
+  imprint: Imprint
+  privacy-policy: Privacy Policy
 navigation:
   toggle: Toggle Navigation
 search:

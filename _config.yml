@@ -84,7 +84,14 @@ deploy:
 meta_generator: true
 
 ## Plugins: https://hexo.io/plugins/
+## https://github.com/ele828/hexo-prism-plugin
 prism_plugin:
   mode: 'preprocess'
   theme: 'default'
   line_number: false
+## https://github.com/alexbruno/hexo-generator-json-content
+jsonContent:
+  ignore:
+    paths:
+      - meta/imprint.html
+      - meta/privacy-policy.html

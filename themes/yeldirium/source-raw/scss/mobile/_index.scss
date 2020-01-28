@@ -1,5 +1,3 @@
-$body-padding__x: 2em;
-
 body {
   display: grid;
   grid-template-areas:
@@ -9,7 +7,9 @@ body {
   grid-template-rows: auto auto auto;
 
   margin: 0;
-  padding: 0 #{$body-padding__x};
+  padding: 0 #{$sm-body-padding-x};
+
+  background-color: $background;
 }
 
 .header {
@@ -19,7 +19,7 @@ body {
     display: grid;
 
     grid-template-areas: "profile searchbar button";
-    grid-template-columns: 3em auto 3em;
+    grid-template-columns: 3rem auto 3rem;
   }
 
   &__body {
@@ -43,13 +43,13 @@ body {
   &__avatar {
     display: inline-block;
 
-    height: 2em;
+    height: 2rem;
 
-    padding: 0.5em 0;
+    padding: 0.5rem 0;
 
     &__image {
-      width: 2em;
-      height: 2em;
+      width: 2rem;
+      height: 2rem;
 
       border-radius: 50%;
     }
@@ -75,7 +75,7 @@ body {
 
   justify-content: space-between;
 
-  padding: 0.5em;
+  padding: 0.5rem;
 
   &__input {
     margin: 0;
@@ -86,7 +86,7 @@ body {
   }
 
   &__submit {
-    margin: 0 0 0 -3em;
+    margin: 0 0 0 -3rem;
     padding: 0;
 
     background-color: transparent;
@@ -100,7 +100,7 @@ body {
 
 .navigation {
   margin: 0;
-  padding: 0 0.5em;
+  padding: 0 0.5rem;
 
   list-style: none;
 
@@ -108,14 +108,18 @@ body {
     &__link {
       display: block;
 
-      padding: 0.75em 0;
+      padding: 0.75rem 0;
 
-      color: #444;
+      color: $font-color-main;
       text-decoration: none;
+
+      &:hover {
+        color: $font-color-main;
+      }
     }
 
     &__title {
-      padding-left: 2em;
+      padding-left: 2rem;
     }
   }
 }
@@ -124,23 +128,66 @@ body {
   display: flex;
 
   margin: 0;
-  padding: 0.75em 0.5em;
+  padding: 0.75rem 0.5rem;
 
   list-style: none;
 
   &__item {
-    margin-right: 1em;
+    margin-right: 1rem;
 
     &__link {
-      color: #444;
+      color: $font-color-main;
     }
   }
 }
 
 .sidebar {
+  grid-area: sidebar;
+
   display: none;
 }
 
 .main {
-  width: calc(100vw - 2 * #{$body-padding__x});
+  grid-area: body;
+
+  width: calc(100vw - 2 * #{$sm-body-padding-x});
+}
+
+.footer {
+  grid-area: footer;
+
+  color: $font-color-light;
+
+  a {
+    color: $font-color-light;
+
+    &:hover {
+      color: $font-color-link-hover;
+    }
+  }
+
+  &__link {
+    margin-right: 0.5rem;
+  }
+}
+
+.home-jumbo {
+  display: flex;
+  justify-content: center;
+
+  margin: 3rem 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin: 0 0 1rem 0;
+    }
+
+    p {
+      margin: 0 0 0.5rem 0;
+    }
+  }
 }

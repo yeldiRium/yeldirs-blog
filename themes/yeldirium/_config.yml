@@ -7,8 +7,12 @@ menu:
     path: /
     icon: fas fa-home
     enabled: true
+  - name: blog
+    path: /blog/
+    icon: fas fa-align-left
+    enabled: true
   - name: repositories
-    path: /repositories
+    path: /repositories/
     icon: fas fa-folder
     enabled: false
   - name: about
@@ -22,6 +26,14 @@ menu:
   - name: archive
     path: /archive/
     icon: fas fa-archive
+    enabled: true
+
+footer:
+  - name: imprint
+    path: /meta/imprint.html
+    enabled: true
+  - name: privacy-policy
+    path: /meta/privacy-policy.html
     enabled: true
 
 site:
