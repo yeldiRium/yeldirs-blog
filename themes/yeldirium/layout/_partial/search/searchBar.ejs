@@ -1,15 +1,13 @@
 <%- partial('_partial/search/insight/template') %>
 <%- partial('_partial/search/insight/config') %>
 
-<div class="searchbar">
-  <form class="searchbar__form">
-    <input
-      type="text"
-      class="searchbar__input"
-      placeholder="<%= __("search.title") %>"
-    />
-    <button type="submit" class="searchbar__submit" onclick="return false;">
-      <i class="fas fa-search"></i>
-    </button>
-  </form>
-</div>
+<form class="searchbar">
+  <input
+    type="text"
+    class="searchbar__input"
+    placeholder="<%= __("search.title") %>"
+  />
+  <button type="submit" class="searchbar__submit" onclick="return false;">
+    <i class="fas fa-search"></i>
+  </button>
+</form>

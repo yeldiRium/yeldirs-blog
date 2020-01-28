@@ -71,15 +71,11 @@ body {
 .searchbar {
   grid-area: searchbar;
 
+  display: flex;
+
+  justify-content: space-between;
+
   padding: 0.5em;
-
-  &__form {
-    display: flex;
-
-    justify-content: space-between;
-
-    height: 100%;
-  }
 
   &__input {
     margin: 0;
@@ -90,7 +86,7 @@ body {
   }
 
   &__submit {
-    margin: 0;
+    margin: 0 0 0 -3em;
     padding: 0;
 
     background-color: transparent;
