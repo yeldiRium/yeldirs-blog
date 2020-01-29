@@ -1,0 +1,11 @@
+<% if (post.categories && post.categories.length > 0) { %>
+  <span class="post__category">
+    <i class="fas fa-folder"></i>
+    <%- list_categories(post.categories, {
+      show_count: false,
+      class: 'post__category',
+      style: 'none',
+      separator: ' &gt; '
+    }) %>
+  </span>
+<% } %>

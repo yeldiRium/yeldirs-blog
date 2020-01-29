@@ -1,0 +1,16 @@
+.sidebar {
+  grid-area: sidebar;
+
+  display: none;
+}
+
+@media only screen and (min-width: $md-min-width) {
+  .sidebar {
+    display: block;
+
+    padding: 0 1rem;
+
+    background-color: $sidebar-background;
+    border-left: 1px solid $sidebar-border;
+  }
+}

@@ -64,6 +64,10 @@
   .widget__tag-cloud {
     a {
       @include tag;
+
+      display: inline-block;
+
+      margin-bottom: 0.4rem;
     }
   }
 }

@@ -1,0 +1,33 @@
+.post {
+  &__date, &__category, &__tag {
+    margin-right: 1rem;
+
+    color: $color-gray-light;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__navigation {
+    &-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      padding: 0;
+
+      list-style: none;
+    }
+
+    &-next {
+      justify-self: flex-end;
+    }
+
+    &-prev, &-next {
+      a {
+        color: $color-gray-light;
+        text-decoration: none;
+      }
+    }
+  }
+}

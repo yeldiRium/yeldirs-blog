@@ -1,10 +1,17 @@
-<main class="main main--index" role="main">
-  <div class="home-jumbo">
-    <div class="home-jumbo__content">
-      <h2>Hi there!</h2>
-      <p>My name is Hannes Leutloff.</p>
-      <p>I develop applications, services, systems.</p>
-      <p>I also sometimes write stuff.</p>
+<main class="main main--blog" role="main">
+  <h1><%= __('menu.blog') %></h1>
+
+  <% if (page.posts.length < 2){ %>
+    <% page.posts.each(post => { %>
+      <%- partial('_partial/post/post', { post: post, index: true }) %>
+    <% }) %>
+  <% } else { %>
+    <div class="recent-posts">
+      <% page.posts.each(post => { %>
+        <%- partial('_partial/post/preview', { post: post }) %>
+      <% }) %>
     </div>
-  </div>
+  <% } %>
+
+  <%- partial('_partial/pagination') %>
 </main>

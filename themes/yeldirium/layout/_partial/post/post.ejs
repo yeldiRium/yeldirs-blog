@@ -1,0 +1,18 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="post post--<%= post.layout %>">
+  <div class="post__header">
+    <% if (post.link || post.title){ %>
+      <%- partial('title') %>
+    <% } %>
+    <div class="post__meta">
+      <%- partial('date') %>
+      <%- partial('category') %>
+      <%- partial('tag') %>
+    </div>
+  </div>
+  <div class="post__content">
+    <%- post.content %>
+  </div>
+</article>
+<% if (!index){ %>
+  <%- partial('navigation') %>
+<% } %>

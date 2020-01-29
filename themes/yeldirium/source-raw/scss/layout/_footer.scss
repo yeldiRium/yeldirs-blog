@@ -1,0 +1,26 @@
+.footer {
+  grid-area: footer;
+
+  color: $font-color-light;
+
+  a {
+    color: $font-color-light;
+
+    &:hover {
+      color: $font-color-link-hover;
+    }
+  }
+
+  &__link {
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: $xl-min-width) {
+  .footer {
+    padding: 0 1rem;
+
+    background-color: $sidebar-background;
+    border-right: 1px solid $sidebar-border;
+  }
+}

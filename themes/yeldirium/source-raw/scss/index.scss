@@ -1,13 +1,24 @@
 @import './variables';
 @import './mixins';
 
+// Vendor
 @import './insight';
-@import './shared/hamburger';
-@import './shared/fonts';
-@import './shared/hidden-text';
-@import './shared/images';
-@import './shared/text';
 
-@import './mobile';
-@import './tablet';
-@import './desktop';
+@import './layout/body';
+@import './layout/header';
+@import './layout/main';
+@import './layout/sidebar';
+@import './layout/footer';
+
+@import './generic/fonts';
+@import './generic/images';
+@import './generic/text';
+
+@import './component/navigation-social';
+@import './component/home-jumbo';
+@import './component/recent-posts';
+@import './component/sidebar-widgets';
+@import './component/hidden-text';
+@import './component/hamburger';
+@import './component/post';
+@import './component/pagination';

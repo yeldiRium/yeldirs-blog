@@ -1,0 +1,26 @@
+.pagination {
+  *, a:visited {
+    color: $color-gray-light;
+  }
+
+  a:hover {
+    color: $font-color-link-hover;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__numbers {
+    margin: 0 1rem;
+
+    * {
+      margin: 0 0.5rem;
+    }
+  }
+}

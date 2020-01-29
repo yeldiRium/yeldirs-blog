@@ -1,0 +1,18 @@
+<div class="recent-posts__item">
+  <div class="recent-posts__header">
+    <time class="recent-posts__date" datetime="<%= post.date.toJSON() %>">
+      <%= date(post.date)%>
+    </time>
+    <% if (post.categories.length > 0) { %>
+      <span class="recent-posts__category">
+        | <%- list_categories(post.categories, { show_count: false, depth: 2, style: 'none', separator: ' &gt; ' }) %>
+      </span>
+    <% } %>
+  </div>
+  <a class="recent-posts__title" href="<%= url_for(post.path) %>"><%= post.title %></a>
+  <div class="recent-posts__tags">
+    <% post.tags.each(tag => { %>
+      <span class="recent-posts__tag"><%= tag.name %></span>
+    <% }); %>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.main {
+  grid-area: body;
+
+  width: calc(100vw - 2 * #{$sm-body-padding-x});
+}
+
+@media only screen and (min-width: $md-min-width) {
+  .main {
+    width: calc(100vw - #{$md-sidebar-width} - #{$md-navigation-width} - 2 * #{$md-body-padding-x});
+  }
+}
+
+@media only screen and (min-width: $xl-min-width) {
+  .main {
+    width: calc(100vw - 2 * #{$xl-sidebar-width} - 2 * #{$xl-body-padding-x});
+  }
+}

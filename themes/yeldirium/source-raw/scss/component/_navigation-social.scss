@@ -1,0 +1,16 @@
+.navigation-social {
+  display: flex;
+
+  margin: 0;
+  padding: 0.75rem 0.5rem;
+
+  list-style: none;
+
+  &__item {
+    margin-right: 1rem;
+
+    &__link {
+      color: $font-color-main;
+    }
+  }
+}

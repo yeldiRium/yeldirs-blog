@@ -10,6 +10,11 @@ footer:
   privacy-policy: Privacy Policy
 navigation:
   toggle: Toggle Navigation
+  older: Older
+  newer: Newer
+pagination:
+  previous: Previous
+  next: Next
 search:
   title: Search
   placeholder: Type something...

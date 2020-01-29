@@ -17,7 +17,7 @@ menu:
     enabled: false
   - name: about
     path: /about/
-    icon: fas fa-w-18 fa-archive
+    icon: fas fa-w-18 fa-user
     enabled: true
   - name: contact
     path: /contact/
@@ -51,6 +51,11 @@ site:
   tagCloud:
     minFont: 13
     maxFont: 14
+  pagination:
+    prev:
+      alwayShow: true
+    next:
+      alwayShow: true
 
 profile:
   gravatar: hannes.leutloff@yeldirium.de

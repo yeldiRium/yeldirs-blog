@@ -1,0 +1,47 @@
+<% if (page.total > 1){ %>
+    <nav class="pagination">
+        <!--
+        <% if (!page.prev && theme.site.pagination.prev.alwayShow) { %>
+            <span class="pagination__prev pagination__prev--disabled">&lt; <%= __('pagination.previous') %></span>
+        <% } %>
+        <%- paginator({
+            prev_text: '&lt; ' + __('pagination.previous'),
+            next_text: __('pagination.next') + ' &gt;'
+        }) %>
+        <% if (!page.next && theme.site.pagination.next.alwayShow) { %>
+            <span class="pagination__next pagination__next--disabled"><%= __('pagination.next') %> &gt;</span>
+        <% } %>
+        -->
+    </nav>
+    <nav class="pagination">
+        <ul class="pagination__list">
+            <% if (!page.prev && theme.site.pagination.prev.alwayShow) { %>
+                <li class="pagination__prev pagination__prev--disabled">
+                    &lt; <%= __('pagination.previous') %>
+                </li>
+            <% } else { %>
+                <li class="pagination__prev">
+                    <a href="<%- url_for(page.prev_link) %>">
+                        &lt; <%= __('pagination.previous') %>
+                    </a>
+                </li>
+            <% } %>
+            <div class="pagination__numbers">
+                <%- paginator({
+                    prev_next: false
+                }) %>
+            </div>
+            <% if (!page.next && theme.site.pagination.next.alwayShow) { %>
+                <li class="pagination__next pagination__next--disabled">
+                    <%= __('pagination.next') %> &gt;
+                </li>
+            <% } else { %>
+                <li class="pagination__next">
+                    <a href="<%- url_for(page.next_link) %>">
+                        <%= __('pagination.next') %> &gt;
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+    </nav>
+<% } %>

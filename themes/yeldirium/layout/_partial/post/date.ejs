@@ -1,0 +1,6 @@
+<span class="post__date">
+	<i class="far fa-calendar-check"></i>
+	<a href="<%- url_for(post.path) %>" class="post__date-link">
+		<time datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time>
+	</a>
+</span>
