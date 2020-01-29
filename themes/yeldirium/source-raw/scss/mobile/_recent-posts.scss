@@ -1,0 +1,61 @@
+.recent-posts {
+  &__item {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "title"
+      "tags";
+
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 0.75rem 1rem;
+
+    border: 1px solid $color-gray-very-light;
+  }
+
+  &__header {
+    grid-area: header;
+
+    margin-bottom: 0.2rem;
+  }
+
+  &__date {
+    color: $color-gray-light;
+    font-size: 0.8rem;
+  }
+
+  &__category {
+    color: $color-gray-light;
+    font-size: 0.8rem;
+
+    a {
+      color: $color-gray-light;
+      text-decoration: none;
+
+      &:visited {
+        color: $color-gray-light;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__title {
+    grid-area: title;
+
+    margin-bottom: 0.2rem;
+  }
+
+  &__tags {
+    grid-area: tags;
+
+    span {
+      @include tag;
+
+      padding: 0.1rem 0.2rem;
+
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -7,7 +7,7 @@
           <li>
             <div class="widget__recent-posts__item-inner">
               <p class="widget__recent-posts__item-category">
-                <%- list_categories(post.categories, {show_count: false, depth:2, style: 'none', separator: '<i class="fas fa-angle-right"></i>'}) %>
+                <%- list_categories(post.categories, {show_count: false, depth: 2, style: 'none', separator: ' &gt; '}) %>
               </p>
               <p class="widget__recent-posts__item-title">
                 <a href="<%- url_for(post.link ? post.link : post.path) %>"><%= post.title || '(no title)' %></a>

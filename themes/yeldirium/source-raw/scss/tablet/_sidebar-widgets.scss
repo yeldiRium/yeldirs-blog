@@ -1,8 +1,4 @@
 @media only screen and (min-width: $md-min-width) {
-  .widget {
-
-  }
-
   .widget__archive-list, .widget__categories-list {
     @include list;
 
@@ -41,6 +37,8 @@
     &__item-category {
       margin: 0 0 0.2rem 0;
 
+      color: $font-color-light;
+
       a {
         color: $font-color-light;
 
@@ -65,15 +63,7 @@
 
   .widget__tag-cloud {
     a {
-      margin-bottom: 0.2rem;
-      padding: 0.3rem 0.6rem;
-
-      border-radius: 3px;
-
-      background: $color-gray-very-light;
-
-      font-size: 0.75%;
-      text-decoration: none;
+      @include tag;
     }
   }
 }

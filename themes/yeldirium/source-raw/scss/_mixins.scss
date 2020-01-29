@@ -20,3 +20,14 @@
     }
   }
 }
+
+@mixin tag {
+  margin-bottom: 0.2rem;
+  padding: 0.3rem 0.6rem;
+
+  border-radius: 3px;
+
+  background: $color-gray-very-light;
+
+  text-decoration: none;
+}
