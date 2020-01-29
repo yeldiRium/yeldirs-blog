@@ -1,0 +1,22 @@
+@mixin list {
+  padding-inline-start: 0;
+  list-style: none;
+
+  ul {
+    list-style: none;
+    padding-inline-start: 20px;
+  }
+
+  li {
+    &:before {
+      content: "▪";
+
+      float: left;
+
+      margin: 0 0.5rem;
+
+      color: $font-color-light;
+      font-size: 0.8rem;
+    }
+  }
+}

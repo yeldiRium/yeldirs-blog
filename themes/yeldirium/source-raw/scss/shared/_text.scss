@@ -16,3 +16,7 @@ a {
     color: $font-color-main;
   }
 }
+
+.category-list, .tag-list, .archive-list {
+  @include list;
+}

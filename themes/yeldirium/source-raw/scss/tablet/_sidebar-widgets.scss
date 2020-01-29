@@ -4,24 +4,7 @@
   }
 
   .widget__archive-list, .widget__categories-list {
-    padding-inline-start: 0;
-    list-style: none;
-
-    ul {
-      list-style: none;
-      padding-inline-start: 20px;
-    }
-
-    &-item {
-      &:before {
-        content: "▪";
-
-        margin: 0 0.5rem;
-
-        color: $font-color-light;
-        font-size: 0.8rem;
-      }
-    }
+    @include list;
 
     &-link {
       text-decoration: none;
