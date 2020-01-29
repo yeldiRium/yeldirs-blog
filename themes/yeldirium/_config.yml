@@ -40,7 +40,7 @@ site:
   favicon: /favicon.ico
   showProfileInHeader: true
   enableMenuIcons: true
-  announcement: This is an important message, to be seen in the sidebar at all times.
+  announcement:
   archive:
     showCount: true
     type: yearly
@@ -76,7 +76,7 @@ rss: /atom.xml
 sidebar:
   enabled: true
   widgets:
-    - announcement
+    #- announcement
     - recentPosts
     - archive
     - tagCloud
