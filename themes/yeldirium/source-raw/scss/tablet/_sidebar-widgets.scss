@@ -1,0 +1,42 @@
+@media only screen and (min-width: $md-min-width) {
+  .widget {
+
+  }
+
+  .widget__recent-posts {
+    list-style: none;
+    padding: 0;
+
+    &__item-inner {
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    &__item-category {
+      margin: 0 0 0.2rem 0;
+
+      a {
+        color: $font-color-light;
+
+        &:visited {
+          color: $font-color-light;
+        }
+      }
+    }
+
+    &__item-title {
+      margin: 0 0 0.2rem 0;
+    }
+
+    &__item-date {
+      margin: 0;
+
+      color: $font-color-light;
+
+      font-size: 0.8rem;
+    }
+  }
+}

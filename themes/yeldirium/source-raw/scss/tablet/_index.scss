@@ -1,4 +1,6 @@
-@media only screen and (min-width: 45em) {
+@import './sidebar-widgets';
+
+@media only screen and (min-width: $md-min-width) {
   body {
     grid-template-areas:
       "header body sidebar"

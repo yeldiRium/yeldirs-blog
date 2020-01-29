@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: $xl-min-width) {
   body {
     grid-template-areas:
       "header body sidebar"
@@ -65,6 +65,10 @@
 
       &__link {
         letter-spacing: 0.5px;
+
+        svg.svg-inline--fa {
+          width: 1rem;
+        }
       }
     }
   }

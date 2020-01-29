@@ -5,27 +5,27 @@ language: en
 menu:
   - name: home
     path: /
-    icon: fas fa-home
+    icon: fas fa-w-18 fa-home
     enabled: true
   - name: blog
     path: /blog/
-    icon: fas fa-align-left
+    icon: fas fa-w-18 fa-align-left
     enabled: true
   - name: repositories
     path: /repositories/
-    icon: fas fa-folder
+    icon: fas fa-w-18 fa-folder
     enabled: false
   - name: about
     path: /about/
-    icon: fas fa-archive
+    icon: fas fa-w-18 fa-archive
     enabled: true
   - name: contact
     path: /contact/
-    icon: fas fa-address-book
+    icon: fas fa-w-18 fa-address-book
     enabled: true
   - name: archive
     path: /archive/
-    icon: fas fa-archive
+    icon: fas fa-w-18 fa-archive
     enabled: true
 
 footer:
