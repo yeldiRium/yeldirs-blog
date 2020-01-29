@@ -9,6 +9,8 @@
     grid-template-rows: auto $md-footer-height;
     grid-column-gap: $md-body-padding-x;
 
+    min-height: 100vh;
+
     padding: 0;
 
     overflow-x: hidden;

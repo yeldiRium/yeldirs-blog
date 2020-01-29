@@ -3,6 +3,46 @@
 
   }
 
+  .widget__archive-list, .widget__categories-list {
+    padding-inline-start: 0;
+    list-style: none;
+
+    ul {
+      list-style: none;
+      padding-inline-start: 20px;
+    }
+
+    &-item {
+      &:before {
+        content: "▪";
+
+        margin: 0 0.5rem;
+
+        color: $font-color-light;
+        font-size: 0.8rem;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+    }
+
+    &-count {
+      margin-left: 0.5rem;
+
+      color: $font-color-light;
+      font-size: 0.8rem;
+
+      &:before {
+        content: "(";
+      }
+
+      &:after {
+        content: ")";
+      }
+    }
+  }
+
   .widget__recent-posts {
     list-style: none;
     padding: 0;
@@ -37,6 +77,20 @@
       color: $font-color-light;
 
       font-size: 0.8rem;
+    }
+  }
+
+  .widget__tag-cloud {
+    a {
+      margin-bottom: 0.2rem;
+      padding: 0.3rem 0.6rem;
+
+      border-radius: 3px;
+
+      background: $color-gray-very-light;
+
+      font-size: 0.75%;
+      text-decoration: none;
     }
   }
 }

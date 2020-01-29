@@ -2,7 +2,7 @@
   <div class="widget">
     <h3 class="widget-title"><%= __('sidebar.widget.categories') %></h3>
     <div class="widget-body">
-      <%- list_categories({show_count: theme.site.categories.showCount}) %>
+      <%- list_categories({ show_count: theme.site.categories.showCount, class: 'widget__categories' }) %>
     </div>
   </div>
 <% } %>

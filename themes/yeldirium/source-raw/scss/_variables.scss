@@ -2,12 +2,17 @@ $background: #fff;
 $sidebar-background: #fbfbfb;
 $sidebar-border: #f6f6f6;
 
+$color-gray-main: #444;
+$color-gray-light: #777;
+$color-gray-very-light: #eee;
+
+$color-primary-dark: #060;
 $color-primary: #090;
 
-$font-color-main: #444;
-$font-color-light: #777;
+$font-color-main: $color-gray-main;
+$font-color-light: $color-gray-light;
 $font-color-link-hover: $color-primary;
-$font-color-link-visited: #060;
+$font-color-link-visited: $color-primary-dark;
 
 // mobile
 $sm-body-padding-x: 2rem;

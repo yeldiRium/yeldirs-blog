@@ -20,12 +20,12 @@ search:
   untitled: (Untitled)
 sidebar:
   widget:
-    announcement: Announcement
-    archive: Archive
-    tags: Tags
-    categories: Categories
-    tagCloud: Tag Cloud
-    recentPosts: Recent Posts
+    announcement: announcement
+    archive: archive
+    tags: tags
+    categories: categories
+    tagCloud: tag cloud
+    recentPosts: latest articles
 copyright:
   theme_by: Theme by
   based_on: based on
