@@ -1,0 +1,10 @@
+# Disable directory listing.
+Options -Indexes
+
+# Set cache time for static assets.
+<FilesMatch "\.(png|jp?g|gif|ico|mp4|wmv|mov|mpeg|css|map|woff?|eot|svg|ttf|js|json|pdf|csv|webp)">
+    ExpiresActive on
+    ExpiresDefault "access plus 2 weeks"
+</FilesMatch>
+
+ErrorDocument 404 /404.html

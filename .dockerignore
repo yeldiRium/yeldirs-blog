@@ -1,0 +1,11 @@
+.git
+public
+node_modules
+**/node_modules
+
+_config.dev.yml
+.dockerignore
+.drone.yml
+.gitignore
+Dockerfile
+db.json

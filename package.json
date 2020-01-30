@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "webpack": "cd themes/yeldirium && npx webpack --mode production && cd -",
-    "webpack:dev": "cd themes/yeldirium && npx webpack --mode development && cd -",
-    "webpack:clean": "rm -rf themes/yeldirium/source",
-    "build": "yarn run webpack && hexo generate",
-    "clean": "yarn run webpack:clean && hexo clean",
-    "server": "yarn run webpack:dev && hexo server"
+    "setup:theme": "cd themes/yeldirium && yarn install && cd -",
+    "setup": "yarn install && yarn run setup:theme",
+    "clean:theme": "rm -rf themes/yeldirium/source",
+    "clean": "yarn run clean:theme && hexo clean",
+    "build:theme": "cd themes/yeldirium && npx webpack --mode production && cd -",
+    "build:theme:dev": "cd themes/yeldirium && npx webpack --mode development && cd -",
+    "build:dev": "yarn run build:theme && hexo --config _config.dev.yml generate",
+    "build": "yarn run build:theme && hexo generate",
+    "server": "yarn run build:theme:dev && hexo --config _config.dev.yml server"
   },
   "hexo": {
     "version": "4.2.0"
