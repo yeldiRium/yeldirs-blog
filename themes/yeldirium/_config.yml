@@ -71,8 +71,6 @@ profile:
       twitter: https://twitter.com/yeldiRium
       linkedin: https://www.linkedin.com/in/hannes-leutloff/
 
-rss: /atom.xml
-
 sidebar:
   enabled: true
   widgets:
