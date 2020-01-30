@@ -20,3 +20,7 @@ a {
 .category-list, .tag-list, .archive-list {
   @include list;
 }
+
+.font-light {
+  font-weight: 300;
+}

@@ -9,10 +9,12 @@
 @import './layout/main';
 @import './layout/sidebar';
 @import './layout/footer';
+@import './layout/about';
 
 @import './generic/fonts';
 @import './generic/images';
 @import './generic/text';
+@import './generic/blocks';
 
 @import './component/navigation-social';
 @import './component/home-jumbo';
@@ -22,3 +24,4 @@
 @import './component/hamburger';
 @import './component/post';
 @import './component/pagination';
+@import './component/skills-list';
