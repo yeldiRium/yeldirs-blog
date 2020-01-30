@@ -1,0 +1,18 @@
+kind: pipeline
+name: yeldirs-blog
+
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      auto_tag: true
+      repo: nexus-docker.marvelous.systems:443/yeldir/yeldirs-blog
+      registry: nexus-docker.marvelous.systems:443
+
+trigger:
+  event:
+    - tag
