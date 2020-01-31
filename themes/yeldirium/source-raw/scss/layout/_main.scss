@@ -7,6 +7,7 @@
 @media only screen and (min-width: $md-min-width) {
   .main {
     width: calc(100vw - #{$md-sidebar-width} - #{$md-navigation-width} - 2 * #{$md-body-padding-x});
+    max-width: 40rem;
   }
 }
 
