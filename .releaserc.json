@@ -12,9 +12,14 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "docker build -t yeldir/yeldirs-blog ."
+        "prepareCmd": "docker build -t nexus-docker.marvelous.systems:443/yeldir/yeldirs-blog ."
       }
     ],
-    ["semantic-release-docker", { "name": "yeldir/yeldirs-blog" }]
+    [
+      "semantic-release-docker",
+      {
+        "name": "nexus-docker.marvelous.systems:443/yeldir/yeldirs-blog"
+      }
+    ]
   ]
 }
