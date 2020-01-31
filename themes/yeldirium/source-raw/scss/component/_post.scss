@@ -1,6 +1,11 @@
 .post {
+  &__meta {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__date, &__category, &__tag {
-    margin-right: 1rem;
+    margin-bottom: 0.25rem;
 
     color: $color-gray-light;
 
@@ -33,5 +38,17 @@
 
   &__content {
     max-width: 40rem;
+  }
+}
+
+@media only screen and (min-width: $md-min-width) {
+  .post {
+    &__meta {
+      display: block;
+    }
+
+    &__date, &__category, &__tag {
+      margin-right: 1rem;
+    }
   }
 }
