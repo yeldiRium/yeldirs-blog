@@ -1,0 +1,23 @@
+.work-item, .education-item {
+  h3 {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  &__timespan {
+    font-size: 0.9rem;
+  }
+
+  &__description {
+    ul {
+      @include list;
+
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.education-item {
+  &__description {
+    font-size: 0.9rem;
+  }
+}

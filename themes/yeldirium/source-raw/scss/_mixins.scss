@@ -1,5 +1,5 @@
 @mixin list {
-  padding-inline-start: 0;
+  padding-inline-start: 1.5rem;
   list-style: none;
 
   ul {
@@ -13,7 +13,7 @@
 
       float: left;
 
-      margin: 0 0.5rem;
+      margin: 0 0 0 -1rem;
 
       color: $font-color-light;
       font-size: 0.8rem;

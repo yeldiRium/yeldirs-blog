@@ -7,13 +7,13 @@ title: About
 
 ## Work Experience
 
-  <div class="about__work-item">
+  <div class="work-item">
     <h3>the native web GmbH</h3>
-    <span class="about__work-item-title">Core Developer</span>
-    <div class="about__work-item-timespan">
-      Since <time class="about__education-item-from" datetime="2019-08-01">01.08.2019</time>
+    <span class="work-item__title">Core Developer</span>
+    <div class="work-item__timespan">
+      Since <time class="work-item__from" datetime="2019-08-01">01.08.2019</time>
     </div>
-    <div class="about__work-item-description">
+    <div class="work-item__description">
       <ul>
         <li>Core Developer</li>
         <li>Open Source</li>
@@ -24,13 +24,13 @@ title: About
       </ul>
     </div>
   </div>
-  <div class="about__work-item">
+  <div class="work-item">
     <h3>dkd Internet Service GmbH</h3>
-    <span class="about__work-item-title">Senior Developer + DevOps</span>
-    <div class="about__work-item-timespan">
-      <time class="about__education-item-from" datetime="2018-04-23">23.04.2018</time> - <time class="about__education-item-to" datetime="2019-07-31">31.07.2019</time>
+    <span class="work-item__title">Senior Developer + DevOps</span>
+    <div class="work-item__timespan">
+      <time class="work-item__from" datetime="2018-04-23">23.04.2018</time> - <time class="work-item__to" datetime="2019-07-31">31.07.2019</time>
     </div>
-    <div class="about__work-item-description">
+    <div class="work-item__description">
       <ul>
         <li>TYPO3 Integration and Development</li>
         <li>Frontend Development with Bootstrap3/4 and jQuery</li>
@@ -40,13 +40,13 @@ title: About
       </ul>
     </div>
   </div>
-  <div class="about__work-item">
+  <div class="work-item">
     <h3>dkd Internet Service GmbH</h3>
-    <span class="about__work-item-title">Junior Developer</span>
-    <div class="about__work-item-timespan">
-      <time class="about__education-item-from" datetime="2015-03-01">01.03.2015</time> - <time class="about__education-item-to" datetime="2018-04-23">23.04.2018</time>
+    <span class="work-item__title">Junior Developer</span>
+    <div class="work-item__timespan">
+      <time class="work-item__from" datetime="2015-03-01">01.03.2015</time> - <time class="work-item__to" datetime="2018-04-23">23.04.2018</time>
     </div>
-    <div class="about__work-item-description">
+    <div class="work-item__description">
       <ul>
         <li>TYPO3 Integration</li>
         <li>PHP Development</li>
@@ -54,13 +54,13 @@ title: About
       </ul>
     </div>
   </div>
-  <div class="about__work-item">
+  <div class="work-item">
     <h3>CiD GmbH</h3>
-    <span class="about__work-item-title">Assistant/Junior</span>
-    <div class="about__work-item-timespan">
-      <time class="about__education-item-from" datetime="">01.08.2011</time> - <time class="about__education-item-to" datetime="">31.10.2011</time>
+    <span class="work-item__title">Assistant/Junior</span>
+    <div class="work-item__timespan">
+      <time class="work-item__from" datetime="">01.08.2011</time> - <time class="work-item__to" datetime="">31.10.2011</time>
     </div>
-    <div class="about__work-item-description">
+    <div class="work-item__description">
       <ul>
         <li>Data Entry</li>
         <li>C# Development</li>
@@ -72,19 +72,19 @@ title: About
 
 ## Education
 
-  <div class="about__education-item">
+  <div class="education-item">
     <h3>B. Sc. Computer Science</h3>
-    <span class="about__education-item-institute">Goethe University Frankfurt am Main</span>
-    <div class="about__education-item-description"><a href="https://github.com/yeldiRium/uimadatabase" rel="noopener">Work publicly available</a></div>
-    <div class="about__education-item-timespan">
-      <time class="about__education-item-from" datetime="2014">2014</time> - <time class="about__education-item-to" datetime="2018">2018</time>
+    <span class="education-item__institute">Goethe University Frankfurt am Main</span>
+    <div class="education-item__description"><a href="https://github.com/yeldiRium/uimadatabase" rel="noopener">Work publicly available</a></div>
+    <div class="education-item__timespan">
+      <time class="education-item__from" datetime="2014">2014</time> - <time class="education-item__to" datetime="2018">2018</time>
     </div>
   </div>
-  <div class="about__education-item">
+  <div class="education-item">
     <h3>Abitur</h3>
-    <span class="about__education-item-institute">Kopernikusschule Freigericht</span>
-    <div class="about__education-item-timespan">
-      <time class="about__education-item-from" datetime="2005">2005</time> - <time class="about__education-item-to" datetime="2014">2014</time>
+    <span class="education-item__institute">Kopernikusschule Freigericht</span>
+    <div class="education-item__timespan">
+      <time class="education-item__from" datetime="2005">2005</time> - <time class="education-item__to" datetime="2014">2014</time>
     </div>
   </div>
 </section>
@@ -192,30 +192,6 @@ title: About
         </div>
       </div>
     </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Go</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 40%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Java</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 25%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Elixir</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 15%;"></div>
-        </div>
-      </div>
-    </li>
   </ul>
 </section>
 <section class="about__section about__frontend">
@@ -234,6 +210,14 @@ title: About
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>CSS3</span>
+        <div class="skills-list__progress-bar">
+          <div class="skills-list__progress-bar-inner" style="width: 85%;"></div>
+        </div>
+      </div>
+    </li>
+    <li class="skills-list__item">
+      <div class="skills-list__item-inner">
+        <span>SCSS</span>
         <div class="skills-list__progress-bar">
           <div class="skills-list__progress-bar-inner" style="width: 85%;"></div>
         </div>
@@ -267,7 +251,7 @@ title: About
       <div class="skills-list__item-inner">
         <span>React.js</span>
         <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 70%;"></div>
+          <div class="skills-list__progress-bar-inner" style="width: 80%;"></div>
         </div>
       </div>
     </li>
@@ -275,7 +259,7 @@ title: About
       <div class="skills-list__item-inner">
         <span>Redux (+ several additions)</span>
         <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 90%;"></div>
+          <div class="skills-list__progress-bar-inner" style="width: 95%;"></div>
         </div>
       </div>
     </li>
