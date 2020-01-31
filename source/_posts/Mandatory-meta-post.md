@@ -1,12 +1,12 @@
 ---
 title: Mandatory meta-post
+description: A meta-post about the making of of this blog.
+date: 2020-01-31 09:00:00
 tags:
   - hexo
   - meta
 category:
   - development
-date: 2020-01-31 09:00:00
-description: A meta-post about the making of of this blog.
 ---
 
 Like every selfmade casual developer blog, this one needs to start with a meta-post about the making-of of this blog. I feel that this has become somewhat of a ritual with developers who build a blog out of technical interest and refuse to use an off-the-shelf solution like wordpress and instead want to build the blog themselves.

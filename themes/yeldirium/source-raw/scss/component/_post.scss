@@ -24,8 +24,14 @@
       list-style: none;
     }
 
+    &-prev {
+      justify-self: flex-start;
+      grid-column: 1/2
+    }
+
     &-next {
       justify-self: flex-end;
+      grid-column: 2/3
     }
 
     &-prev, &-next {
