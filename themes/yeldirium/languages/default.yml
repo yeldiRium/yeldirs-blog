@@ -9,6 +9,10 @@ footer:
   feed: Feed
   imprint: Imprint
   privacy-policy: Privacy Policy
+headline:
+  tag: Tag
+  category: Category
+  archive_for: Archive for
 navigation:
   toggle: Toggle Navigation
   older: Older

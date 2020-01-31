@@ -79,6 +79,22 @@ deploy:
 meta_generator: true
 
 ## Plugins: https://hexo.io/plugins/
+## https://github.com/hexojs/hexo-generator-archive
+archive_generator:
+  enabled: true
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date
+## https://github.com/hexojs/hexo-generator-tag
+tag_generator:
+  per_page: 10
+  order_by: -date
+## https://github.com/hexojs/hexo-generator-category
+category_generator:
+  per_page: 10
+  order_by: -date
 ## https://github.com/ele828/hexo-prism-plugin
 prism_plugin:
   mode: 'preprocess'

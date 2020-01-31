@@ -1,6 +1,6 @@
-<main class="main main--category" role="main">
-  <div id="category">
-    <h1><%= __('headline.category') %> <%= page.category %></h1>
+<main class="main main--tag" role="main">
+  <div id="tag">
+    <h1><%= __('headline.tag') %> <%= page.tag %></h1>
     <div class="posts-preview-list">
       <% page.posts.each(post => { %>
         <%- partial('_partial/post/preview', { post: post }) %>
@@ -9,7 +9,7 @@
   </div>
 
   <div id="paginator">
-    <% if (page.posts && page.posts.length > config.category_generator.per_page) { %>
+    <% if (page.posts && page.posts.length > config.tag_generator.per_page) { %>
       <%- paginator()%>
     <% } %>
   </div>

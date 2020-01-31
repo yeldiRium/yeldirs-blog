@@ -6,7 +6,7 @@
       <%- partial('_partial/post/post', { post: post, index: true }) %>
     <% }) %>
   <% } else { %>
-    <div class="recent-posts">
+    <div class="posts-preview-list">
       <% page.posts.each(post => { %>
         <%- partial('_partial/post/preview', { post: post }) %>
       <% }) %>

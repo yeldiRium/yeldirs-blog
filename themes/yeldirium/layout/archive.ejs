@@ -50,24 +50,21 @@
     </div>
   <% } else { %>
     <% if (page.month) { %>
-      <h1><%= page.month + '/' + page.year %></h1>
+      <h1><%= __('headline.archive_for') %> <%= page.month + '/' + page.year %></h1>
     <% } else { %>
       <h1><%= page.year %></h1>
     <% } %>
 
-    <% page.posts.each(article => { %>
-      <div class="archive-item">
-        <a href="<%= url_for(article.path)%>">
-          <%= article.title %>
-        </a>
-        <time datetime="<%= date_xml(article.date)%>">
-          <%= date(article.date)%>
-        </time>
-      </div>
-    <% }) %>
+    <div class="posts-preview-list">
+      <% page.posts.each(post => { %>
+        <%- partial('_partial/post/preview', { post: post }) %>
+      <% }) %>
+    </div>
 
     <div id="paginator">
-      <%- paginator()%>
+      <% if (page.posts && page.posts.length > config.archive_generator.per_page) { %>
+        <%- paginator()%>
+      <% } %>
     </div>
   <% } %>
 </main>
