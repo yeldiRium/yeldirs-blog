@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/yeldiRium/yeldirs-blog/compare/v1.5.2...v1.5.3) (2020-01-31)
+
+
+### Bug Fixes
+
+* Skip actions if on release commits. ([4e47daa](https://github.com/yeldiRium/yeldirs-blog/commit/4e47daa20dd276461d852fff414d38705289b986))
+
 ## [1.5.2](https://github.com/yeldiRium/yeldirs-blog/compare/v1.5.1...v1.5.2) (2020-01-31)
 
 

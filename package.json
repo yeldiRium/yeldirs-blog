@@ -1,6 +1,6 @@
 {
   "name": "yeldirs-blog",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "private": true,
   "scripts": {
     "setup:theme": "cd themes/yeldirium && yarn install && cd -",
