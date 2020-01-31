@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/yeldiRium/yeldirs-blog/compare/v1.5.3...v1.6.0) (2020-01-31)
+
+
+### Features
+
+* Split scss more; Fix navigation icon width on mobile. ([e64cec6](https://github.com/yeldiRium/yeldirs-blog/commit/e64cec699b00938f09684785e6db597161a64ccc))
+
 ## [1.5.3](https://github.com/yeldiRium/yeldirs-blog/compare/v1.5.2...v1.5.3) (2020-01-31)
 
 
