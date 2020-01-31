@@ -6,14 +6,11 @@ const setupMobileNavigation = () => {
     const currentlyActive = navigationToggleButton.classList.contains('is-active');
 
     if (currentlyActive) {
-      console.log('closing menu...')
       navigationToggleButton.classList.remove('is-active');
       navigationWrapper.classList.remove('header__body--open');
 
       return;
     }
-
-    console.log('opening menu...')
 
     navigationToggleButton.classList.add('is-active');
     navigationWrapper.classList.add('header__body--open');
