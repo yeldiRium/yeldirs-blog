@@ -108,16 +108,16 @@ title: About
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>German</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 100%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 100%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>English</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 95%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 95%;"></div>
         </div>
       </div>
     </li>
@@ -131,64 +131,64 @@ title: About
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>JavaScript (NodeJS)</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 95%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 95%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>TypeScript</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 90%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 90%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>express.js</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 85%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 85%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>telegraf</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 80%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 80%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>PHP</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 95%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 95%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>TYPO3</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 85%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 85%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Python</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 60%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 60%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Haskell</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 50%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 50%;"></div>
         </div>
       </div>
     </li>
@@ -202,72 +202,72 @@ title: About
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>HTML5</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 85%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 85%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>CSS3</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 85%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 85%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>SCSS</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 85%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 85%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Bootstrap 3/4</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 80%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 80%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>JavaScript (ESNext)</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 95%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 95%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Vue.js (+ Vuex)</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 90%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 90%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>React.js</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 80%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 80%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Redux (+ several additions)</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 95%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 95%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Webpack</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 90%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 90%;"></div>
         </div>
       </div>
     </li>
@@ -287,48 +287,48 @@ title: About
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Docker</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 95%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 95%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Docker Compose</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 85%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 85%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Kubernetes</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 70%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 70%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>JSON Schema 4/7</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 70%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 70%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>OpenAPI 3</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 60%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 60%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>CI/CD</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 70%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 70%;"></div>
         </div>
       </div>
     </li>
@@ -342,64 +342,64 @@ title: About
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Jira</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 70%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 70%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Nexus3 OSS</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 60%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 60%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>DokuWiki</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 90%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 90%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>GitHub</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 80%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 80%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Gitea</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 70%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 70%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>GitLab</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 60%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 60%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Drone</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 70%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 70%;"></div>
         </div>
       </div>
     </li>
     <li class="skills-list__item">
       <div class="skills-list__item-inner">
         <span>Jenkins</span>
-        <div class="skills-list__progress-bar">
-          <div class="skills-list__progress-bar-inner" style="width: 70%;"></div>
+        <div class="progress-bar">
+          <div class="progress-bar__inner" style="width: 70%;"></div>
         </div>
       </div>
     </li>
