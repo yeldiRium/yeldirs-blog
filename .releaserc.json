@@ -1,0 +1,20 @@
+{
+  "verifyConditions": {
+    "path": "semantic-release-docker",
+    "registryUrl": "nexus-docker.marvelous.systems:443"
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    ["@semantic-release/npm", { "npmPublish": false }],
+    "@semantic-release/git",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "docker build -t yeldir/yeldirs-blog ."
+      }
+    ],
+    ["semantic-release-docker", { "name": "yeldir/yeldirs-blog" }]
+  ]
+}
