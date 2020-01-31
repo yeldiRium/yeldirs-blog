@@ -4,6 +4,7 @@
     <img
       class="profile__avatar__image"
       src="<%= ( profile.gravatar ? gravatar(profile.gravatar, 128) : url_for(profile.avatar)) %>"
+      alt="<%= __('profile.avatar_alt_text') %>"
       width="20"
       height="20"
     />

@@ -17,6 +17,8 @@ navigation:
   toggle: Toggle Navigation
   older: Older
   newer: Newer
+profile:
+  avatar_alt_text: Profile picture
 pagination:
   previous: Previous
   next: Next
