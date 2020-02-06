@@ -1,16 +1,16 @@
 /* style */
-import 'normalize-css/normalize.css';
-import '@fortawesome/fontawesome-free/css/all.css';
+import "normalize-css/normalize.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
-import './scss/index.scss';
+import "./scss/index.scss";
 
 /* script */
-import { insight } from './vendor/insight';
+import { initialize as initializeSearch } from "./js/search";
 
-import setupMobileNavigation from './js/mobileNavigation';
+import setupMobileNavigation from "./js/mobileNavigation";
 
-insight(window.INSIGHT_CONFIG);
+initializeSearch(window.SEARCH_CONFIG);
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   setupMobileNavigation();
 });

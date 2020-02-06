@@ -1,13 +1,19 @@
 <script>
-  window.INSIGHT_CONFIG = {
-      TRANSLATION: {
-          POSTS: '<%= __("search.posts") %>',
-          PAGES: '<%= __("search.pages") %>',
-          CATEGORIES: '<%= __("search.categories") %>',
-          TAGS: '<%= __("search.tags") %>',
-          UNTITLED: '<%= __("search.untitled") %>',
-      },
-      ROOT_URL: '<%= config.root %>',
-      CONTENT_URL: '<%- url_for("/content.json")%>',
+  window.SEARCH_CONFIG = {
+    url: '<%- url_for("/content.json")%>',
+    resultsPerSection: '<%- theme.search.resultsPerSection %>',
+    translation: {
+      posts: '<%= __("search.posts") %>',
+      pages: '<%= __("search.pages") %>',
+      categories: '<%= __("search.categories") %>',
+      tags: '<%= __("search.tags") %>',
+      untitled: '<%= __("search.untitled") %>',
+    },
+    weights: {
+      post: <%- JSON.stringify(theme.search.weights.post) || "undefined" %>,
+      page: <%- JSON.stringify(theme.search.weights.page) || "undefined" %>,
+      category: <%- JSON.stringify(theme.search.weights.category) || "undefined" %>,
+      tag: <%- JSON.stringify(theme.search.weights.tag) || "undefined" %>
+    }
   };
 </script>

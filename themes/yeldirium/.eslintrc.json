@@ -7,11 +7,10 @@
     "ecmaVersion": 2019,
     "ecmaFeatures": {
       "impliedStrict": true
-    },
-    "sourceType": "module"
+    }
   },
   "env": {
-    "browser": true,
+    "node": true,
     "es2017": true
   }
 }
