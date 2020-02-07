@@ -1,10 +1,30 @@
 # Disable directory listing.
 Options -Indexes
 
+ErrorDocument 404 /404.html
+
+# Only allow loading content from the same origin.
+Header set Content-Security-Policy "script-src 'self'"
+
+# Prevent browsers from loading the page in a frame.
+Header set X-Frame-Options "SAMEORIGIN"
+
+# Stop browsers from sanitizing possible XSS attacks and just block them.
+Header set X-XSS-Protection "1; mode=block"
+
+# Force browser to accept the mime type sent by the server.
+Header set X-Content-Type-Options "nosniff"
+
+# Send only domain when moving cross origin, otherwise full url. Don't set referer on downgrade.
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+<FilesMatch "\.html">
+    # Explicitly set character encoding.
+    Header set Content-Type "text/html; charset=utf-8"
+</FilesMatch>
+
 # Set cache time for static assets.
 <FilesMatch "\.(png|jp?g|gif|ico|mp4|wmv|mov|mpeg|css|map|woff?|eot|svg|ttf|js|json|pdf|csv|webp)">
     ExpiresActive on
     ExpiresDefault "access plus 2 weeks"
 </FilesMatch>
-
-ErrorDocument 404 /404.html
