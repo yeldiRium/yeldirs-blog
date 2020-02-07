@@ -4,7 +4,7 @@ Options -Indexes
 ErrorDocument 404 /404.html
 
 # Only allow loading content from the same origin.
-Header set Content-Security-Policy "script-src 'self'"
+Header set Content-Security-Policy "script-src 'self' 'unsafe-inline'"
 
 # Prevent browsers from loading the page in a frame.
 Header set X-Frame-Options "SAMEORIGIN"
