@@ -3,6 +3,12 @@ layout: post
 title: gen-z -  A library for JavaScript generators
 date: 2020-02-16 14:53:14
 tags:
+  - JavaScript
+  - open-source
+  - library
+category:
+  - development
+  - JavaScript
 ---
 
 [gen-z](https://github.com/yeldiRium/gen-z) is a JavaScript helper library for [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) I'm developing.
