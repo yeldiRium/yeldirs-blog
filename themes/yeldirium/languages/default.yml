@@ -25,6 +25,7 @@ pagination:
 search:
   title: Search
   placeholder: Type something...
+  submit: Submit search
   posts: Posts
   pages: Pages
   categories: Categories

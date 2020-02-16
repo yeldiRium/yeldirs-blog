@@ -6,7 +6,8 @@
         <a  href="<%- url_for(theme.profile.social.links[i]) %>"
             class="navigation-social__item__link"
             target="_blank"
-            title="<%= titlecase(i) %>"
+            title="<%= i %>"
+            aria-label="<%= i %>"
             rel="noopener"
             <%= tooltipClass %>
         >
@@ -18,7 +19,8 @@
       <a  href="/atom.xml"
           class="navigation-social__item__link"
           target="_blank"
-          title="Feed"
+          title="<%= __("footer.feed")%>"
+          aria-label="<%= __("footer.feed")%>"
           <%= tooltipClass %>
       >
         <i class="fas fa-rss-square"></i>

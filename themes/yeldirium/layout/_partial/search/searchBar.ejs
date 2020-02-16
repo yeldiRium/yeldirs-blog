@@ -5,9 +5,15 @@
   <input
     type="text"
     class="searchbar__input"
+    aria-label="<%= __("search.title") %>"
     placeholder="<%= __("search.title") %>"
   />
-  <button type="submit" class="searchbar__submit" onclick="return false;">
+  <button
+    type="submit"
+    class="searchbar__submit"
+    aria-label="<%= __("search.submit") %>"
+    onclick="return false;"
+  >
     <i class="fas fa-search"></i>
   </button>
 </form>
