@@ -13,21 +13,14 @@ category:
 
 [gen-z](https://github.com/yeldiRium/gen-z) is a JavaScript helper library for [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) I'm developing.
 
-It provides a number of functions for synchronous as well as asynchronous
-generators. If you are - like me - a fan of map/filter/reduce and all the good
-functional-programming stuff for working with arrays/lists and you want to apply this
-to generators, then gen-z is for you.
+It provides a number of functions for synchronous as well as asynchronous generators. If you are - like me - a fan of map/filter/reduce and all the good functional-programming stuff for working with arrays/lists and you want to apply this to generators, then gen-z is for you.
 
 Let's look at a few things one can do with generator-focused helpers.
 
 ## Reading files into strings
 
-Sometimes, when you're working with a stream, all you really just want is the
-entire content of the stream. It's better if you don't have to do this, since
-you might be underestimating the amount of content you'll receive, but sometimes
-it's the best thing to do.
-Luckily for us, node.js streams implement the asynchronous iterable interface
-and can thus be treated like generators. So we can use gen-z's `async.collect`:
+Sometimes, when you're working with a stream, all you really just want is the entire content of the stream. It's better if you don't have to do this, since you might be underestimating the amount of content you'll receive, but sometimes it's the best thing to do.
+Luckily for us, node.js streams implement the asynchronous iterable interface and can thus be treated like generators. So we can use gen-z's `async.collect`:
 
 ```javascript
 const fs = require('fs');
@@ -47,15 +40,11 @@ const collect = require('gen-z/async/consume/collect');
 })();
 ```
 
-Yes, you could just use `fs.readFile`. But you can apply the concept to any
-stream that you receive buffer chunks over. Think a minio file stream or a
-download.
+Yes, you could just use `fs.readFile`. But you can apply the concept to any stream that you receive buffer chunks over. Think a minio file stream or a download.
 
 ## Event sourcing
 
-If you're doing event sourcing, you probably want
-to recalculate a state from a stream of events
-quite often. An easy way to do this is with `async.consume.reduce`:
+If you're doing event sourcing, you probably want to recalculate a state from a stream of events quite often. An easy way to do this is with `async.consume.reduce`:
 
 ```javascript
 const reduce = require('gen-z/async/consume/reduce');
@@ -88,5 +77,4 @@ const initialState = {
 ```
 
 If you like the concept and the library, leave [a star on github](https://github.com/yeldiRium/gen-z).
-Also tell me about your generator applications and whether there are cool things
-to do with them that I haven't covered yet.
+Also tell me about your generator applications and whether there are cool things to do with them that I haven't covered yet.
