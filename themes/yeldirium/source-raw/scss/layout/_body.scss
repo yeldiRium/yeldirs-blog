@@ -20,7 +20,7 @@ body {
       "header body sidebar"
       "header footer sidebar";
     grid-template-columns: $md-navigation-width auto $md-sidebar-width;
-    grid-template-rows: auto $md-footer-height;
+    grid-template-rows: auto max-content;
     grid-column-gap: $md-body-padding-x;
 
     padding: 0;
@@ -35,7 +35,6 @@ body {
       "header body sidebar"
       "footer body sidebar";
     grid-template-columns: $xl-sidebar-width auto $xl-sidebar-width;
-    grid-template-rows: auto $xl-footer-height;
     grid-column-gap: $xl-body-padding-x;
   }
 }
