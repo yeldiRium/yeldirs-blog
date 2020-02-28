@@ -4,7 +4,9 @@ body {
     "header"
     "body"
     "footer";
-  grid-template-rows: auto auto auto;
+  grid-template-rows: max-content auto max-content;
+
+  min-height: 100vh;
 
   margin: 0;
   padding: 0 #{$sm-body-padding-x};
@@ -20,8 +22,6 @@ body {
     grid-template-columns: $md-navigation-width auto $md-sidebar-width;
     grid-template-rows: auto $md-footer-height;
     grid-column-gap: $md-body-padding-x;
-
-    min-height: 100vh;
 
     padding: 0;
 
