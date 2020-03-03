@@ -14,11 +14,11 @@ category:
 
 Once upon a time the `<table>` layouts were the way to go. They made optically structuring the website relatively simple - with the downside that they severely mixed data structure with presentation.
 
-Skipping a few steps, the next major layouting tool that was used were `float`s. This is - finally - a CSS based layouting approach in which containers were arranged into layouts by making them float to one side of the page and ordering the remaining elements around them. This made it possible to build sidebars and menus - but brought huge complexity with it.
+Skipping a few steps, the next major layouting tool that was used were `float`s. This was - finally - a CSS based layouting approach in which element were arranged into layouts by making them float to one side of the page and ordering the remaining elements around them. This made it possible to build sidebars and menus - but brought huge complexity with it.
 
 Skipping a few more steps, we've finally arrived at css-grid. This mimics in some parts the olden times tabular layouting structure, but gives developers much more control about row heights and column widths as well as element placement within those and especially across those.
 
-To illustrate this, we'll analyse this page's current layout. An important thing to note for the next sections to make sense is that this page basically has three different layouts, depending on the size of your viewing device's viewport. The three layouts can be thought of as a desktop layout, a tablet layout and a mobile layout - but they are a little more fluid than that.
+To illustrate this, we'll analyse this page's current layout. An important thing to note for the next sections to make sense is that this page basically has three different layouts. Which one is shown to you depends on the size of your device's viewport. The three layouts can be thought of as a desktop layout, a tablet layout and a mobile layout - but they are a little more fluid than that.
 
 We'll start with the mobile layout, since it is the simplest one and also because I've built this site mobile first. That means I started with the mobile layout and when progressing to bigger screens new rules are added that take precedence over the smaller screen's rules. The gist of the mobile layout is:
 
