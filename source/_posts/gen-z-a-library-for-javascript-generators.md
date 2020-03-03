@@ -1,6 +1,6 @@
 ---
 layout: post
-title: gen-z -  A library for JavaScript generators
+title: gen-z - A library for JavaScript generators
 date: 2020-02-16 14:53:14
 tags:
   - JavaScript

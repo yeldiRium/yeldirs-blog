@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Mandatory meta-post
 description: A meta-post about the making of of this blog.
 date: 2020-01-31 09:00:00
