@@ -31,3 +31,4 @@ FROM httpd:2.4.41
 ADD apache/httpd.conf /usr/local/apache2/conf/httpd.conf
 COPY --from=builder /build/public /usr/local/apache2/htdocs
 ADD apache/.htaccess /usr/local/apache2/htdocs/.htaccess
+ADD static/* /usr/local/apache2/htdocs/
