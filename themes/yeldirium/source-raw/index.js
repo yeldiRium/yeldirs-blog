@@ -3,6 +3,7 @@ import "normalize-css/normalize.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import "@fortawesome/fontawesome-free/css/brands.css";
 import "@fortawesome/fontawesome-free/css/solid.css";
+import "prismjs/themes/prism.css";
 
 import "./scss/index.scss";
 
