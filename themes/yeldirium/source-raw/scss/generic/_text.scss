@@ -34,3 +34,7 @@ code {
 
   border-radius: 3px;
 }
+
+code[class*="language-"], pre[class*="language-"], span.token {
+  font-family: "Roboto Mono", monospace !important;
+}
