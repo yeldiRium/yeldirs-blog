@@ -113,11 +113,9 @@ jsonContent:
 feed:
   type: atom
   path: atom.xml
-  limit: 20
+  limit: 0
   hub:
-  content: false
-  content_limit: 140
-  content_limit_delim: ' '
+  content: true
   order_by: -date
   autodiscovery: true
 ## https://github.com/hexojs/hexo-generator-sitemap
