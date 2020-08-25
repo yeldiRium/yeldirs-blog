@@ -23,10 +23,6 @@
   %>
   <title><%= pageTitle %></title>
 
-  <%- open_graph({
-    twitter_id: theme.twitter
-  }) %>
-
   <% if (config.feed.path){ %>
     <link rel="alternate" href="<%- config.feed.path %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
