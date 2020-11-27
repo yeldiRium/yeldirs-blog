@@ -4,7 +4,7 @@ import {
   hideSearchBox,
   isSearchBoxOpen,
   followLink,
-  renderSearchResult
+  renderSearchResult,
 } from "./dom";
 import { activeSelection, searchItems } from "./selectors";
 import { search } from "./search";
@@ -12,7 +12,7 @@ import { search } from "./search";
 let touchStart = false;
 
 const setupGlobalListeners = (config, globalElements, data) => {
-  globalElements.input.addEventListener("input", event => {
+  globalElements.input.addEventListener("input", (event) => {
     const keywordString = event.target.value;
 
     renderSearchResult(
@@ -43,7 +43,7 @@ const setupGlobalListeners = (config, globalElements, data) => {
     touchStart = false;
   });
 
-  document.addEventListener("keydown", event => {
+  document.addEventListener("keydown", (event) => {
     if (!isSearchBoxOpen(globalElements)) {
       return;
     }
@@ -81,7 +81,7 @@ const setupGlobalListeners = (config, globalElements, data) => {
   });
 };
 
-const setupSearchResultListeners = globalElements => {
+const setupSearchResultListeners = (globalElements) => {
   for (const searchItemElement of searchItems(globalElements.container)) {
     searchItemElement.addEventListener("click", () => {
       followLink(searchItemElement);

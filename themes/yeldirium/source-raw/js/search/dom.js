@@ -1,7 +1,7 @@
 import { renderSectionForType } from "./elements";
 import { selectables } from "./selectors";
 
-const removeChildren = node => {
+const removeChildren = (node) => {
   while (node.firstChild) {
     node.removeChild(node.firstChild);
   }
@@ -25,7 +25,7 @@ const scrollToResultElement = (globalElements, targetElement) => {
 const moveSelection = (globalElements, offset) => {
   const elements = [...selectables(globalElements.container)];
 
-  const selectionIndex = elements.findIndex(element =>
+  const selectionIndex = elements.findIndex((element) =>
     element.classList.contains("active")
   );
 
@@ -39,7 +39,7 @@ const moveSelection = (globalElements, offset) => {
   scrollToResultElement(globalElements.wrapper, elements[newSelectionIndex]);
 };
 
-const followLink = linkElement => {
+const followLink = (linkElement) => {
   location.href = linkElement.getAttribute("data-url");
 };
 
@@ -54,16 +54,16 @@ const renderSearchResult = (config, globalElements, searchResult) => {
   }
 };
 
-const openSearchBox = globalElements => {
+const openSearchBox = (globalElements) => {
   globalElements.main.classList.add("show");
   globalElements.input.focus();
 };
 
-const hideSearchBox = globalElements => {
+const hideSearchBox = (globalElements) => {
   globalElements.main.classList.remove("show");
 };
 
-const isSearchBoxOpen = globalElements => {
+const isSearchBoxOpen = (globalElements) => {
   return globalElements.main.classList.contains("show");
 };
 
@@ -75,5 +75,5 @@ export {
   renderSearchResult,
   openSearchBox,
   hideSearchBox,
-  isSearchBoxOpen
+  isSearchBoxOpen,
 };

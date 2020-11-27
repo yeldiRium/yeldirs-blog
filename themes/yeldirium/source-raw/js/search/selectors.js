@@ -4,10 +4,12 @@ const input = () => document.querySelector(".ins-search-input");
 const wrapper = () => document.querySelector(".ins-section-wrapper");
 const container = () => document.querySelector(".ins-section-container");
 const closeButton = () => document.querySelector(".ins-close");
-const selectables = container => container.querySelectorAll(".ins-selectable");
-const activeSelection = container =>
+const selectables = (container) =>
+  container.querySelectorAll(".ins-selectable");
+const activeSelection = (container) =>
   container.querySelector(".ins-selectable.active");
-const searchItems = container => container.querySelectorAll(".ins-search-item");
+const searchItems = (container) =>
+  container.querySelectorAll(".ins-search-item");
 
 export {
   searchBar,
@@ -18,5 +20,5 @@ export {
   closeButton,
   selectables,
   activeSelection,
-  searchItems
+  searchItems,
 };

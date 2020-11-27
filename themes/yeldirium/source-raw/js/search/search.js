@@ -1,7 +1,7 @@
 import { parseKeywordString } from "./util";
 
 const filter = (keywords, document, fields) => {
-  return keywords.every(keyword => {
+  return keywords.every((keyword) => {
     for (const field of fields) {
       if (
         document[field] !== undefined &&
@@ -14,11 +14,11 @@ const filter = (keywords, document, fields) => {
   });
 };
 
-const filterFactory = keywords => ({
-  post: document => filter(keywords, document, ["title", "text"]),
-  page: document => filter(keywords, document, ["title", "text"]),
-  category: document => filter(keywords, document, ["name", "slug"]),
-  tag: document => filter(keywords, document, ["name", "slug"])
+const filterFactory = (keywords) => ({
+  post: (document) => filter(keywords, document, ["title", "text"]),
+  page: (document) => filter(keywords, document, ["title", "text"]),
+  category: (document) => filter(keywords, document, ["name", "slug"]),
+  tag: (document) => filter(keywords, document, ["name", "slug"]),
 });
 
 const weigh = (keywords, document, weights) => {
@@ -42,10 +42,10 @@ const weigh = (keywords, document, weights) => {
 };
 
 const weighFactory = (weights, keywords) => ({
-  post: document => weigh(keywords, document, weights.post),
-  page: document => weigh(keywords, document, weights.page),
-  category: document => weigh(keywords, document, weights.category),
-  tag: document => weigh(keywords, document, weights.tag)
+  post: (document) => weigh(keywords, document, weights.post),
+  page: (document) => weigh(keywords, document, weights.page),
+  category: (document) => weigh(keywords, document, weights.category),
+  tag: (document) => weigh(keywords, document, weights.tag),
 });
 
 const search = (config, data, keywordString) => {
@@ -56,28 +56,28 @@ const search = (config, data, keywordString) => {
   return {
     posts: data.posts
       .filter(filters.post)
-      .map(post => ({ post, weight: weighs.post(post) }))
+      .map((post) => ({ post, weight: weighs.post(post) }))
       .sort((a, b) => b.weight - a.weight)
       .map(({ post }) => post)
       .slice(0, config.resultsPerSection),
     pages: data.pages
       .filter(filters.page)
-      .map(page => ({ page, weight: weighs.page(page) }))
+      .map((page) => ({ page, weight: weighs.page(page) }))
       .sort((a, b) => b.weight - a.weight)
       .map(({ page }) => page)
       .slice(0, config.resultsPerSection),
     categories: data.categories
       .filter(filters.category)
-      .map(category => ({ category, weight: weighs.category(category) }))
+      .map((category) => ({ category, weight: weighs.category(category) }))
       .sort((a, b) => b.weight - a.weight)
       .map(({ category }) => category)
       .slice(0, config.resultsPerSection),
     tags: data.tags
       .filter(filters.tag)
-      .map(tag => ({ tag, weight: weighs.tag(tag) }))
+      .map((tag) => ({ tag, weight: weighs.tag(tag) }))
       .sort((a, b) => b.weight - a.weight)
       .map(({ tag }) => tag)
-      .slice(0, config.resultsPerSection)
+      .slice(0, config.resultsPerSection),
   };
 };
 

@@ -12,8 +12,8 @@ import { initialize as initializeSearch } from "./js/search";
 
 import setupMobileNavigation from "./js/mobileNavigation";
 
-initializeSearch(window.SEARCH_CONFIG);
-
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   setupMobileNavigation();
+
+  await initializeSearch(window.SEARCH_CONFIG);
 });

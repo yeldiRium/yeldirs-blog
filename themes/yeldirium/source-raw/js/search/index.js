@@ -5,7 +5,7 @@ import {
   input,
   wrapper,
   container,
-  closeButton
+  closeButton,
 } from "./selectors";
 import { setupGlobalListeners } from "./listeners";
 
@@ -34,14 +34,14 @@ import { setupGlobalListeners } from "./listeners";
  * - weights.tag[fieldName] -      the weight that should be given to matches in
  *                                 the field `fieldName` in tag documents
  */
-const initialize = async config => {
+const initialize = async (config) => {
   const globalElements = {
     searchBar: searchBar(),
     main: main(),
     input: input(),
     wrapper: wrapper(),
     container: container(),
-    closeButton: closeButton()
+    closeButton: closeButton(),
   };
 
   globalElements.main.parentNode.removeChild(globalElements.main);
@@ -49,9 +49,9 @@ const initialize = async config => {
 
   const rawData = await fetch(config.url, {
     headers: {
-      "Content-Type": "application/json"
-    }
-  }).then(response => {
+      "Content-Type": "application/json",
+    },
+  }).then((response) => {
     if (response.status !== 200) {
       console.error("Loading search data failed.");
 
@@ -64,7 +64,7 @@ const initialize = async config => {
     posts: rawData.posts || [],
     pages: rawData.pages || [],
     categories: rawData.categories || [],
-    tags: rawData.tags || []
+    tags: rawData.tags || [],
   };
 
   if (location.hash.trim() === "#ins-search") {

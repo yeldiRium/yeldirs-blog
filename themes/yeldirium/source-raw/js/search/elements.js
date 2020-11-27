@@ -35,7 +35,7 @@ const renderSearchItem = (config, icon, title, url, slug, preview) => {
   return containerElement;
 };
 
-const renderSection = title => {
+const renderSection = (title) => {
   const sectionElement = document.createElement("section");
   sectionElement.classList.add("ins-section");
 
@@ -57,7 +57,7 @@ const renderSectionForType = (config, type, documents) => {
   switch (type) {
     case "posts":
     case "pages": {
-      searchItemElements = documents.map(document =>
+      searchItemElements = documents.map((document) =>
         renderSearchItem(
           config,
           "file",
@@ -71,7 +71,7 @@ const renderSectionForType = (config, type, documents) => {
     }
     case "categories":
     case "tags": {
-      searchItemElements = documents.map(document =>
+      searchItemElements = documents.map((document) =>
         renderSearchItem(
           config,
           type === "categories" ? "folder" : "tag",
