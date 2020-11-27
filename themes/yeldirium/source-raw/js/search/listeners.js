@@ -30,6 +30,9 @@ const setupGlobalListeners = (config, globalElements, data) => {
   globalElements.searchBar.addEventListener("focus", () => {
     openSearchBox(globalElements);
   });
+  globalElements.searchBarInput.addEventListener("focus", () => {
+    openSearchBox(globalElements);
+  });
 
   globalElements.closeButton.addEventListener("click", () => {
     hideSearchBox(globalElements);
@@ -43,30 +46,38 @@ const setupGlobalListeners = (config, globalElements, data) => {
     touchStart = false;
   });
 
+  globalElements.container.addEventListener("focusout", () => {
+    if (!isSearchBoxOpen(globalElements)) {
+      return;
+    }
+
+    hideSearchBox(globalElements);
+  });
+
   document.addEventListener("keydown", (event) => {
     if (!isSearchBoxOpen(globalElements)) {
       return;
     }
 
-    switch (event.keyCode) {
+    switch (event.code) {
       // ESC
-      case 27: {
+      case "Escape": {
         hideSearchBox(globalElements);
         break;
       }
       // UP
-      case 38: {
+      case "ArrowUp": {
         moveSelection(globalElements, -1);
         break;
       }
       // Down
-      case 40: {
+      case "ArrowDown": {
         moveSelection(globalElements, 1);
         break;
       }
       // ENTER
-      case 13: {
-        const selectedElement = activeSelection(globalElements.container);
+      case "Enter": {
+        const selectedElement = activeSelection(globalElements.sectionContainer);
         if (selectedElement !== null) {
           followLink(selectedElement);
         }
@@ -82,7 +93,7 @@ const setupGlobalListeners = (config, globalElements, data) => {
 };
 
 const setupSearchResultListeners = (globalElements) => {
-  for (const searchItemElement of searchItems(globalElements.container)) {
+  for (const searchItemElement of searchItems(globalElements.sectionContainer)) {
     searchItemElement.addEventListener("click", () => {
       followLink(searchItemElement);
     });

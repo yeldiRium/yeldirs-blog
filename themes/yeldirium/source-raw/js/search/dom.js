@@ -23,7 +23,7 @@ const scrollToResultElement = (globalElements, targetElement) => {
 };
 
 const moveSelection = (globalElements, offset) => {
-  const elements = [...selectables(globalElements.container)];
+  const elements = [...selectables(globalElements.sectionContainer)];
 
   const selectionIndex = elements.findIndex((element) =>
     element.classList.contains("active")
@@ -36,7 +36,7 @@ const moveSelection = (globalElements, offset) => {
   const newSelectionIndex =
     (selectionIndex + offset + elements.length) % elements.length;
   elements[newSelectionIndex].classList.add("active");
-  scrollToResultElement(globalElements.wrapper, elements[newSelectionIndex]);
+  scrollToResultElement(globalElements, elements[newSelectionIndex]);
 };
 
 const followLink = (linkElement) => {
@@ -44,12 +44,12 @@ const followLink = (linkElement) => {
 };
 
 const renderSearchResult = (config, globalElements, searchResult) => {
-  removeChildren(globalElements.container);
+  removeChildren(globalElements.sectionContainer);
 
   for (const key in searchResult) {
     const section = renderSectionForType(config, key, searchResult[key]);
     if (section !== null) {
-      globalElements.container.append(section);
+      globalElements.sectionContainer.append(section);
     }
   }
 };

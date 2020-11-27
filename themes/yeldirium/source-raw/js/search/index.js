@@ -1,11 +1,13 @@
 import { openSearchBox } from "./dom";
 import {
-  searchBar,
-  main,
-  input,
-  wrapper,
-  container,
   closeButton,
+  container,
+  input,
+  main,
+  searchBar,
+  searchBarInput,
+  sectionContainer,
+  wrapper,
 } from "./selectors";
 import { setupGlobalListeners } from "./listeners";
 
@@ -36,12 +38,14 @@ import { setupGlobalListeners } from "./listeners";
  */
 const initialize = async (config) => {
   const globalElements = {
-    searchBar: searchBar(),
-    main: main(),
-    input: input(),
-    wrapper: wrapper(),
-    container: container(),
     closeButton: closeButton(),
+    container: container(),
+    input: input(),
+    main: main(),
+    searchBar: searchBar(),
+    searchBarInput: searchBarInput(),
+    sectionContainer: sectionContainer(),
+    wrapper: wrapper(),
   };
 
   globalElements.main.parentNode.removeChild(globalElements.main);
