@@ -30,7 +30,7 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
 // Types (Remove or comment out what you don’t need)
 // ==================================================
 $hamburger-types: (
-  minus
+  squeeze
 ) !default;
 
 // Base Hamburger (We need this)
@@ -39,7 +39,7 @@ $hamburger-types: (
 
 // Hamburger types
 // ==================================================
-@import "../../../node_modules/hamburgers/_sass/hamburgers/types/minus";
+@import "../../../node_modules/hamburgers/_sass/hamburgers/types/squeeze";
 
 // ==================================================
 // Cooking up additional types:
