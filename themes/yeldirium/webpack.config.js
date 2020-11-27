@@ -9,6 +9,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.join(__dirname, "source"),
+    publicPath: "/",
   },
   optimization: {
     minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
@@ -47,8 +48,5 @@ module.exports = {
         ],
       },
     ],
-  },
-  node: {
-    fs: "empty",
   },
 };
