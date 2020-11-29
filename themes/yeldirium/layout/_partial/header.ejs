@@ -14,7 +14,7 @@
           if (item.enabled) {
         %>
           <li class="navigation__item">
-            <a href="<%- url_for(item.path) %>" class="navigation__item__link">
+            <a href="<%- url_for(item.path) %>" tabindex="0" class="navigation__item__link">
               <% if(theme.site.enableMenuIcons) { %>
                 <i class="<%= item.icon %>"></i>
               <% } %>

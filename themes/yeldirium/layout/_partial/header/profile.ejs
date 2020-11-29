@@ -1,6 +1,6 @@
 <% var profile = theme.profile; %>
 <div class="profile">
-  <a class="profile__avatar" href="<%= url_for(config.root) %>">
+  <a class="profile__avatar" href="<%= url_for(config.root) %>" tabindex="-1">
     <img
       class="profile__avatar__image"
       src="<%= ( profile.gravatar ? gravatar(profile.gravatar, 128) : url_for(profile.avatar)) %>"

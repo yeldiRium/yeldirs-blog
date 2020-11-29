@@ -5,11 +5,11 @@
 
 <%- partial('_partial/header') %>
 
-<% if (theme.sidebar.enabled && page.sidebar !== 'none') { %>
-  <%- partial ('_partial/sidebar') %>
-<% } %>
-
 <%- body %>
+
+<% if (theme.sidebar.enabled && page.sidebar !== 'none') { %>
+    <%- partial ('_partial/sidebar') %>
+<% } %>
 
 <%- partial('_partial/footer') %>
 <%- partial('_partial/scripts') %>
