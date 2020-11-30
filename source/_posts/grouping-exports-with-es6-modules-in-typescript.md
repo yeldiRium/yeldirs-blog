@@ -2,7 +2,7 @@
 layout: post
 title: Grouping exports with ES6 modules in TypeScript
 description: A short guide on how to structure large amounts of exports in a TypeScript entrypoint using ES6 modules.
-date: 2020-011-29 20:52:00
+date: 2020-11-29 20:52:00
 tags:
   - JavaScript
   - TypeScript
