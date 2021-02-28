@@ -9,18 +9,18 @@ title: About
 
   <div class="work-item">
     <h3>the native web GmbH</h3>
-    <span class="work-item__title">Core Developer</span>
+    <span class="work-item__title">Software Engineer & Architect</span>
     <div class="work-item__timespan">
       Since <time class="work-item__from" datetime="2019-08-01">01.08.2019</time>
     </div>
     <div class="work-item__description">
       <ul>
-        <li>Core Developer</li>
-        <li>Open Source</li>
+        <li><a href="https://github.com/thenativeweb/wolkenkit/" target="_blank" rel="noopener">Wolkenkit Open Source Development</a></li>
         <li>TypeScript Development</li>
-        <li>JavaScript/Node.js Development</li>
-        <li>Holding Workshops</li>
-        <li>CI/CD and Architecture</li>
+        <li>Systems Architecture</li>
+        <li>CI/CD</li>
+        <li>React/Next.js Development</li>
+        <li>Planning and Giving Workshops & Developer Coaching</li>
       </ul>
     </div>
   </div>
@@ -104,174 +104,29 @@ title: About
 
 ## Language
 
-  <ul class="skills-list">
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>German</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 100%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>English</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 95%;"></div>
-        </div>
-      </div>
-    </li>
-  </ul>
+My native language is **german**. I am also fluent and confident in **english**.
 </section>
 <section class="about__section about__backend clearfix-before">
 
 ## Backend
 
-  <ul class="skills-list">
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>JavaScript (NodeJS)</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 95%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>TypeScript</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 90%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>express.js</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 85%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>telegraf</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 80%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>PHP</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 95%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>TYPO3</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 85%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Python</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 60%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Haskell</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 50%;"></div>
-        </div>
-      </div>
-    </li>
-  </ul>
+I am most experienced in **JavaScript** and **TypeScript** and work with both daily. In their context I am used to many widely used libraries and frameworks, such as **express.js** and **telegraf**. Unfortunately I also have a lot of experience with **PHP** and **TYPO3**.
+
+I have theoretical and professional experience in **database optimization** for **relational databases**, as well as experience in working with **MySQL**, **MariaDB**, **MongoDB**, **PostgreSQL**, **SQLite** and **Minio**.
+
+I have some knowledge of, but no professional experience with, **Rust**, **Haskell**, **Elixir**, **Go** and **Python**.
+
+As any hobby developer I have way more experience writing **Shell** scripts than I would like and have quite a bit of experience in administrating **GNU/Linux** servers and developer machines.
 </section>
 <section class="about__section about__frontend">
 
 ## Frontend
 
-  <ul class="skills-list">
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>HTML5</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 85%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>CSS3</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 85%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>SCSS</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 85%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Bootstrap 3/4</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 80%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>JavaScript (ESNext)</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 95%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Vue.js (+ Vuex)</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 90%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>React.js</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 80%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Redux (+ several additions)</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 95%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Webpack</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 90%;"></div>
-        </div>
-      </div>
-    </li>
-  </ul>
+Since these are the most fundamental building blocks of the frontend, I have years of experience using **HTML5** and **CSS3**, including common strategies to improve **accessibility**.
+
+After several larger projects I have good experience with **React** and **Redux** for web applications, using **SCSS** or **Styled Components** for design. Additionally, I am proficient with **Next.js** and **Webpack** for project setup, bundle building and page size optimization.
+
+I also have some experience with **Vue.js**.
 </section>
 <section class="about__section about__certifications clearfix-before">
 
@@ -283,125 +138,15 @@ title: About
 
 ## DevOps
 
-  <ul class="skills-list">
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Docker</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 95%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Docker Compose</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 85%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Kubernetes</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 70%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>JSON Schema 4/7</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 70%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>OpenAPI 3</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 60%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>CI/CD</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 70%;"></div>
-        </div>
-      </div>
-    </li>
-  </ul>
+I am proficient with **Docker** and **Docker Compose**, as well as in general **Continuous Integration** and **Continuous Development** techniques. I routinely set up quality assurance and build pipelines in integrated environments such as **GitHub** or **GitLab** or with dedicated tools like **Jenkins** or **DroneCI**.
+
+I have professional experience in managing **Kubernetes** clusters with various integrations, such as **Prometheus** for **monitoring**, the **ELK** stack for **logging** and **Velero** for **backups**.
+
+I am proficient in and a strong advocate for **JSONSchema** as well as **OpenAPI3** for API standardization and data validation.
 </section>
 <section class="about__section about__administration">
 
 ## Application Administration
 
-  <ul class="skills-list">
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Jira</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 70%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Nexus3 OSS</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 60%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>DokuWiki</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 90%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>GitHub</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 80%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Gitea</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 70%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>GitLab</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 60%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Drone</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 70%;"></div>
-        </div>
-      </div>
-    </li>
-    <li class="skills-list__item">
-      <div class="skills-list__item-inner">
-        <span>Jenkins</span>
-        <div class="progress-bar">
-          <div class="progress-bar__inner" style="width: 70%;"></div>
-        </div>
-      </div>
-    </li>
-  </ul>
+From some technical lead work and private projects I have experience in administrating and interactivng with several applications that are commonly used in development and ops, such as **Jira**, **Nexus3 OSS**, **DokuWiki**, **GitHub**, **GitLab**, **Gitea**, **Docker Hub**, **CircleCI** and **Jenkins**.
 </section>
