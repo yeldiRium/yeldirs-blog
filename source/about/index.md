@@ -96,7 +96,7 @@ title: About
     <h3>Die GRÜNEN</h3>
     <span class="about__politics-item-position">Ortsvorstand Neu-Isenburg</span>
     <div class="about__politics-item-timespan">
-      Since <time class="about__politics-item-from" datetime="2019-10-31">31.10.2019</time>
+      <time class="about__politics-item-from" datetime="2019-10-31">31.10.2019</time> - <time class="about__politios-item-to" datetime="2021-07-06">06.07.2021</time>
     </div>
   </div>
 </section>
